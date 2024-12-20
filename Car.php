@@ -8,7 +8,7 @@ class Car {
     }
 
     public function init() {
-        $this->db->query("CREATE TABLE IF NOT EXISTS Cars (
+        Database::query("CREATE TABLE IF NOT EXISTS Cars (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 make VARCHAR(50) NOT NULL,         
                 model VARCHAR(50) NOT NULL,        

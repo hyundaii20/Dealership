@@ -3,26 +3,31 @@
 
 class Database {
     private static $db = null;
-    private $connection;
 
     public function __construct($servername = "we", $username = "root", $password = "", $dbname = "we") {
         if (self::$db != null) return;
         
-        $this->connection = new mysqli($servername, $username, $password);
+        self::$db = new mysqli($servername, $username, $password);
 
-        $stmt = $this->connection->prepare("CREATE DATABASE IF NOT EXISTS " . $dbname);
+        $stmt = self::$db->prepare("CREATE DATABASE IF NOT EXISTS " . $dbname);
         $stmt->execute();
 
-        $this->connection = new mysqli($servername, $username, $password, $dbname);
+        self::$db = new mysqli($servername, $username, $password, $dbname);
         
-        if ($this->connection->connect_error) {
-            die("Connection failed: " . $this->connection->connect_error);
+        if (self::$db->connect_error) {
+            die("Connection failed: " . self::$db->connect_error);
         }
-
-        self::$db = $this;
     }
 
     public static function getConnection() {
-        return self::$db->connection;
+        return self::$db;
+    }
+
+    public static function query( $query, $params = array() ) {
+
+        $stmt = self::$db->prepare($query);
+        $stmt->execute($params);
+        $result = $stmt->get_result();
+        return $result;
     }
 }
