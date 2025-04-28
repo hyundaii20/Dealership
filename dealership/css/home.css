@@ -1,0 +1,43 @@
+/* Home page specific styles */
+.hero-section {
+    background-color: #007bff;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.hero-section h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+.hero-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.featured-section {
+    margin-bottom: 30px;
+}
+.featured-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.featured-cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.view-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+}
+.view-btn:hover {
+    background-color: #0056b3;
+} 

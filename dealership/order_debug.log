@@ -1,0 +1,23 @@
+2025-04-26 18:59:57 - Starting checkout for user_id from session: 3
+2025-04-26 19:00:01 - Starting checkout for user_id from session: 3
+2025-04-26 19:00:01 - Using session user_id=3 for checkout
+2025-04-26 19:00:13 - Starting checkout for user_id from session: 3
+2025-04-26 19:00:16 - Starting checkout for user_id from session: 3
+2025-04-26 19:00:16 - Using session user_id=3 for checkout
+2025-04-26 19:00:19 - Starting checkout for user_id from session: 3
+2025-04-26 19:00:23 - Starting checkout for user_id from session: 3
+2025-04-26 19:00:23 - Using session user_id=3 for checkout
+2025-04-26 19:00:23 - Updated user information for user_id=3
+2025-04-26 19:00:23 - Creating order with user_id=3
+2025-04-26 19:01:54 - Starting checkout for user_id from session: 3
+2025-04-26 19:01:58 - Starting checkout for user_id from session: 3
+2025-04-26 19:01:58 - Using session user_id=3 for checkout
+2025-04-26 19:01:58 - Updated user information for user_id=3
+2025-04-26 19:01:58 - Creating order with user_id=3
+2025-04-26 19:28:37 - Starting checkout for user_id from session: 4
+2025-04-26 19:28:40 - Starting checkout for user_id from session: 4
+2025-04-26 19:28:40 - Using session user_id=4 for checkout
+2025-04-26 19:28:46 - Starting checkout for user_id from session: 4
+2025-04-26 19:28:46 - Using session user_id=4 for checkout
+2025-04-26 19:28:46 - Updated user information for user_id=4
+2025-04-26 19:28:46 - Creating order with user_id=4
